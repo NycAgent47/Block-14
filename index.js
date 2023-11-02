@@ -1,16 +1,14 @@
-// Prompt the user for a list of integers separated by commas.
 const userInputString = prompt(
   "Add integers separated by commas.",
  
 );
 
-// Split the string of numbers into an array of strings.
 const stringArray = userInputString.split(",");
 
-// Convert the array of strings into an array of numbers.
+
 const numbers = stringArray.map(str => parseInt(str));
 
-// Perform some calculations on the numbers.
+
 console.log(`You have given ${getLength(numbers)} numbers.`);
 console.log(`The sum of your numbers is ${getSum(numbers)}.`);
 console.log(`The mean of your numbers is ${getMean(numbers)}.`);
@@ -20,7 +18,6 @@ console.log(`The range of your numbers is ${getRange(numbers)}.`);
 console.log(`The even numbers you gave are ${getEvens(numbers)}.`);
 console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 
-// Complete the functions below to make the program work!
 
 function getLength(numbers) {
   return numbers.length;
